@@ -16,7 +16,7 @@
     - Different circuit states (CLOSED, OPEN, HALF_OPEN)
 
 
-- [Streaming Transformer](../nodeteamdev.github.io/examples/StreamTransformer.js)
+- [Streaming Transformer](./examples/StreamTransformer.js)
     - Advanced stream processing
     - Composable transformation streams
     - Supports async transformations
