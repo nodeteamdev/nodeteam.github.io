@@ -23,7 +23,7 @@
     - Easy stream composition
 
 
-- Robust Retry Mechanism
+- [Robust Retry Mechanism](./examples/RetryMechanism.js)
     - Exponential backoff with jitter
     - Configurable retry strategies
     - Prevents thundering herd problem

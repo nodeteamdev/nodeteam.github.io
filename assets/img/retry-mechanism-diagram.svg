@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="24" fill="#1e293b" font-weight="bold">
+    Robust Retry Mechanism Pattern
+  </text>
+
+  <!-- Timeline Base -->
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Time Markers -->
+  <line x1="100" y1="295" x2="100" y2="305" stroke="#94a3b8" stroke-width="2"/>
+  <text x="100" y="320" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">0ms</text>
+  
+  <line x1="700" y1="295" x2="700" y2="305" stroke="#94a3b8" stroke-width="2"/>
+  <text x="700" y="320" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">Time</text>
+
+  <!-- Retry Attempts with Exponential Backoff -->
+  <!-- Initial Request -->
+  <circle cx="120" cy="200" r="8" fill="#ef4444"/>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">Initial</text>
+  <line x1="120" y1="208" x2="120" y2="300" stroke="#ef4444" stroke-width="2" stroke-dasharray="4"/>
+
+  <!-- First Retry -->
+  <circle cx="220" cy="200" r="8" fill="#f97316"/>
+  <text x="220" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">Retry 1</text>
+  <line x1="220" y1="208" x2="220" y2="300" stroke="#f97316" stroke-width="2" stroke-dasharray="4"/>
+
+  <!-- Second Retry -->
+  <circle cx="370" cy="200" r="8" fill="#eab308"/>
+  <text x="370" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">Retry 2</text>
+  <line x1="370" y1="208" x2="370" y2="300" stroke="#eab308" stroke-width="2" stroke-dasharray="4"/>
+
+  <!-- Third Retry -->
+  <circle cx="570" cy="200" r="8" fill="#22c55e"/>
+  <text x="570" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">Retry 3</text>
+  <line x1="570" y1="208" x2="570" y2="300" stroke="#22c55e" stroke-width="2" stroke-dasharray="4"/>
+
+  <!-- Backoff Curve -->
+  <path d="M 120,200 Q 170,200 220,200 T 370,200 T 570,200" 
+        fill="none" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Jitter Zones -->
+  <path d="M 210,190 L 230,190 L 230,210 L 210,210 Z" fill="#bfdbfe" fill-opacity="0.3"/>
+  <path d="M 360,185 L 380,185 L 380,215 L 360,215 Z" fill="#bfdbfe" fill-opacity="0.3"/>
+  <path d="M 560,180 L 580,180 L 580,220 L 560,220 Z" fill="#bfdbfe" fill-opacity="0.3"/>
+
+  <!-- Exponential Scale Indicator -->
+  <path d="M 120,120 L 220,120 L 370,120 L 570,120" 
+        fill="none" stroke="#64748b" stroke-width="1" stroke-dasharray="4"/>
+  
+  <text x="170" y="110" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">1s</text>
+  <text x="295" y="110" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">2s</text>
+  <text x="470" y="110" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">4s</text>
+
+  <!-- Legend -->
+  <rect x="100" y="350" width="15" height="15" fill="#ef4444"/>
+  <text x="125" y="362" font-family="Arial" font-size="12" fill="#334155">Initial Request</text>
+
+  <rect x="250" y="350" width="15" height="15" fill="#bfdbfe" fill-opacity="0.3"/>
+  <text x="275" y="362" font-family="Arial" font-size="12" fill="#334155">Jitter Window</text>
+
+  <rect x="400" y="350" width="15" height="15" fill="#3b82f6"/>
+  <text x="425" y="362" font-family="Arial" font-size="12" fill="#334155">Backoff Curve</text>
+
+  <!-- Animated Retry Particle -->
+  <circle r="4" fill="#3b82f6">
+    <animateMotion 
+      path="M 120,200 Q 170,200 220,200 T 370,200 T 570,200"
+      dur="4s"
+      repeatCount="indefinite"/>
+    <animate 
+      attributeName="opacity"
+      values="1;0.2;1"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </circle>
+</svg>

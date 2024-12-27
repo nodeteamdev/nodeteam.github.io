@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" />
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="24" fill="#1e293b" font-weight="bold">
+    Stream Transformer Pattern
+  </text>
+
+  <!-- Input Stream -->
+  <rect x="50" y="100" width="150" height="200" rx="10" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="125" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#334155">Input Stream</text>
+  <circle cx="125" cy="220" r="30" fill="#93c5fd"/>
+  <text x="125" y="225" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e293b">Data</text>
+
+  <!-- Transformer 1 -->
+  <rect x="300" y="125" width="200" height="150" rx="10" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">Transform</text>
+  <path d="M 320,200 L 480,200" stroke="#1e40af" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e40af">Process</text>
+
+  <!-- Output Stream -->
+  <rect x="600" y="100" width="150" height="200" rx="10" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="675" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#334155">Output Stream</text>
+  <circle cx="675" cy="220" r="30" fill="#60a5fa"/>
+  <text x="675" y="225" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e293b">Result</text>
+
+  <!-- Connecting Arrows -->
+  <path d="M 200,200 L 300,200" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 500,200 L 600,200" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Data Flow Particles -->
+  <circle cx="250" cy="200" r="4" fill="#3b82f6">
+    <animate attributeName="cx" from="200" to="300" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="200" r="4" fill="#3b82f6">
+    <animate attributeName="cx" from="500" to="600" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Decorative Elements -->
+  <path d="M 50,350 L 750,350" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="400" cy="350" r="3" fill="#64748b"/>
+  <circle cx="380" cy="350" r="3" fill="#64748b"/>
+  <circle cx="420" cy="350" r="3" fill="#64748b"/>
+</svg>
