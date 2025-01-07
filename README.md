@@ -29,9 +29,9 @@
     - Easy stream composition
     - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-stream-transformer-1b1f3b1b3b3d)
   
-  ```bash
-    npm run example:1
-  ```
+```bash
+  npm run example:1
+```
 
 - **[Robust Retry Mechanism](./examples/RetryMechanism.js)**
 ![Retry Mechanism](./assets/img/retry-mechanism-diagram.svg)
@@ -41,9 +41,9 @@
     - Intelligent delay calculation
     - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-robust-retry-mechanism-1b1f3b1b3b3d)
 
-  ```bash
-    npm run example:2
-  ```
+```bash
+  npm run example:2
+```
 
 
 - **[Adaptive Rate Limiter](./examples/AdaptiveRateLimiter.js)**
@@ -54,9 +54,9 @@
     - Flexible configuration
     - [Full Article (Medium)](https://medium.com/@v-checha/node-js-advanced-patterns-adaptive-rate-limiter-aa8221177162)
 
-  ```bash
-    npm run example:3
-  ```
+```bash
+  npm run example:3
+```
 
 - Dynamic Plugin System
     - Runtime plugin loading
