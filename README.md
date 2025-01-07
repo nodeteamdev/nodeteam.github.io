@@ -3,11 +3,15 @@
 
 ## Table of Contents
 
-- Dependency Injection Container
+- [Dependency Injection Container](./examples/DependencyInjectionContainer.js)
+![Dependency Injection Container](./assets/img/di-container-diagram.svg)
     - Dynamic dependency management
     - Service registration and resolution
     - Supports complex dependency graphs
-
+```bash
+    $ node run example:4
+```
+> Full article: https://medium.com/@v-checha/node-js-advanced-patterns-stream-transformations-2a5c2fa6f590
 
 - Circuit Breaker Pattern
     - Prevents cascading failures
@@ -26,7 +30,7 @@
   ```bash
     $ node run example:1
   ```
-
+> Full article: https://medium.com/@v-checha/node-js-advanced-patterns-stream-transformations-2a5c2fa6f590
 
 - [Robust Retry Mechanism](./examples/RetryMechanism.js)
 ![Retry Mechanism](./assets/img/retry-mechanism-diagram.svg)
@@ -38,6 +42,7 @@
   ```bash
     $ node run example:2
   ```
+> Full Article: https://medium.com/@v-checha/advanced-node-js-patterns-implementing-robust-retry-logic-656cf70f8ee9
 
 
 - [Adaptive Rate Limiter](./examples/AdaptiveRateLimiter.js)
@@ -50,6 +55,8 @@
   ```bash
     $ node run example:3
   ```
+  
+> Full article: https://medium.com/@v-checha/node-js-advanced-patterns-adaptive-rate-limiter-aa8221177162
 
 
 - Dynamic Plugin System
