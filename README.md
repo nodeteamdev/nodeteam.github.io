@@ -3,15 +3,15 @@
 
 ## Table of Contents
 
-- [Dependency Injection Container](./examples/DependencyInjectionContainer.js)
+- **[Dependency Injection Container](./examples/DependencyInjectionContainer.js)**
 ![Dependency Injection Container](./assets/img/di-container-diagram.svg)
     - Dynamic dependency management
     - Service registration and resolution
     - Supports complex dependency graphs
+    - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-dependency-injection-container-45938e88e873)
 ```bash
     $ node run example:4
 ```
-> Full article: https://medium.com/@v-checha/node-js-advanced-patterns-stream-transformations-2a5c2fa6f590
 
 - Circuit Breaker Pattern
     - Prevents cascading failures
@@ -20,43 +20,42 @@
     - Different circuit states (CLOSED, OPEN, HALF_OPEN)
 
 
-- [Streaming Transformer](./examples/StreamTransformer.js)
+- **[Streaming Transformer](./examples/StreamTransformer.js)**
 ![Stream Transformer](./assets/img/stream-transformer-diagram.svg)
     - Advanced stream processing
     - Composable transformation streams
     - Supports async transformations
     - Easy stream composition
+    - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-stream-transformer-1b1f3b1b3b3d)
   
   ```bash
     $ node run example:1
   ```
-> Full article: https://medium.com/@v-checha/node-js-advanced-patterns-stream-transformations-2a5c2fa6f590
 
-- [Robust Retry Mechanism](./examples/RetryMechanism.js)
+- **[Robust Retry Mechanism](./examples/RetryMechanism.js)**
 ![Retry Mechanism](./assets/img/retry-mechanism-diagram.svg)
     - Exponential backoff with jitter
     - Configurable retry strategies
     - Prevents thundering herd problem
     - Intelligent delay calculation
+    - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-robust-retry-mechanism-1b1f3b1b3b3d)
 
   ```bash
     $ node run example:2
   ```
-> Full Article: https://medium.com/@v-checha/advanced-node-js-patterns-implementing-robust-retry-logic-656cf70f8ee9
 
 
-- [Adaptive Rate Limiter](./examples/AdaptiveRateLimiter.js)
+- **[Adaptive Rate Limiter](./examples/AdaptiveRateLimiter.js)**
 ![Adaptive Rate Limiter](./assets/img/rate-limiter-diagram.svg)
     - Dynamic request throttling
     - Adaptive threshold management
     - Prevents system overload
     - Flexible configuration
+    - [Full Article (Medium)](https://medium.com/@v-checha/node-js-advanced-patterns-adaptive-rate-limiter-aa8221177162)
 
   ```bash
     $ node run example:3
   ```
-  
-> Full article: https://medium.com/@v-checha/node-js-advanced-patterns-adaptive-rate-limiter-aa8221177162
 
 
 - Dynamic Plugin System
