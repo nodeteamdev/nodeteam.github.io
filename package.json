@@ -1,0 +1,30 @@
+{
+  "name": "nodeteamdev.github.io",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example:1": "node ./examples/StreamTransformer.js",
+    "example:2": "node ./examples/RetryMechanism.js",
+    "example:3": "node ./examples/AdaptiveRateLimiter.js",
+    "example:4": "node ./examples/DependencyInjectionContainer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeteamdev/nodeteamdev.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodeteamdev/nodeteamdev.github.io/issues"
+  },
+  "homepage": "https://github.com/nodeteamdev/nodeteamdev.github.io#readme",
+  "devDependencies": {
+    "express": "^4.21.2"
+  }
+}
