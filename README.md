@@ -9,8 +9,9 @@
     - Service registration and resolution
     - Supports complex dependency graphs
     - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-dependency-injection-container-45938e88e873)
+
 ```bash
-    $ node run example:4
+    npm run example:4
 ```
 
 - Circuit Breaker Pattern
@@ -29,7 +30,7 @@
     - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-stream-transformer-1b1f3b1b3b3d)
   
   ```bash
-    $ node run example:1
+    npm run example:1
   ```
 
 - **[Robust Retry Mechanism](./examples/RetryMechanism.js)**
@@ -41,7 +42,7 @@
     - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-robust-retry-mechanism-1b1f3b1b3b3d)
 
   ```bash
-    $ node run example:2
+    npm run example:2
   ```
 
 
@@ -54,9 +55,8 @@
     - [Full Article (Medium)](https://medium.com/@v-checha/node-js-advanced-patterns-adaptive-rate-limiter-aa8221177162)
 
   ```bash
-    $ node run example:3
+    npm run example:3
   ```
-
 
 - Dynamic Plugin System
     - Runtime plugin loading
