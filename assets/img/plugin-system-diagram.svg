@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="24" fill="#1e293b" font-weight="bold">
+    Dynamic Plugin System Pattern
+  </text>
+
+  <!-- Core Application Container -->
+  <rect x="150" y="80" width="500" height="280" rx="10" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial" font-size="16" fill="#334155" font-weight="bold">Core Application</text>
+
+  <!-- Plugin Manager -->
+  <rect x="200" y="120" width="400" height="80" rx="8" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af" font-weight="bold">Plugin Manager</text>
+  <text x="400" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e40af">Load | Unload | Reload | Execute</text>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e40af">Hot Reload Support</text>
+
+  <!-- Plugin Registry -->
+  <rect x="200" y="220" width="400" height="40" rx="8" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <text x="400" y="245" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e40af">Plugin Registry</text>
+
+  <!-- Plugins -->
+  <g id="plugin1">
+    <rect x="200" y="280" width="120" height="60" rx="8" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="260" y="310" text-anchor="middle" font-family="Arial" font-size="12" fill="#5b21b6">Plugin A</text>
+    <circle cx="260" cy="330" r="3" fill="#7c3aed">
+      <animate attributeName="fill" values="#7c3aed;#ddd6fe;#7c3aed" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g id="plugin2">
+    <rect x="340" y="280" width="120" height="60" rx="8" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="400" y="310" text-anchor="middle" font-family="Arial" font-size="12" fill="#5b21b6">Plugin B</text>
+    <circle cx="400" cy="330" r="3" fill="#7c3aed">
+      <animate attributeName="fill" values="#7c3aed;#ddd6fe;#7c3aed" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+  </g>
+
+  <g id="plugin3">
+    <rect x="480" y="280" width="120" height="60" rx="8" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="540" y="310" text-anchor="middle" font-family="Arial" font-size="12" fill="#5b21b6">Plugin C</text>
+    <circle cx="540" cy="330" r="3" fill="#7c3aed">
+      <animate attributeName="fill" values="#7c3aed;#ddd6fe;#7c3aed" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+
+  <!-- Connection Lines -->
+  <path d="M 260,280 L 260,260" stroke="#7c3aed" stroke-width="2"/>
+  <path d="M 400,280 L 400,260" stroke="#7c3aed" stroke-width="2"/>
+  <path d="M 540,280 L 540,260" stroke="#7c3aed" stroke-width="2"/>
+
+  <!-- Legend -->
+  <rect x="200" y="365" width="15" height="15" fill="#bfdbfe"/>
+  <text x="225" y="377" font-family="Arial" font-size="12" fill="#334155">Plugin Manager</text>
+
+  <rect x="340" y="365" width="15" height="15" fill="#93c5fd"/>
+  <text x="365" y="377" font-family="Arial" font-size="12" fill="#334155">Registry</text>
+
+  <rect x="460" y="365" width="15" height="15" fill="#ddd6fe"/>
+  <text x="485" y="377" font-family="Arial" font-size="12" fill="#334155">Active Plugins</text>
+</svg>
