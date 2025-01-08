@@ -11,7 +11,8 @@
     "example:1": "node ./examples/StreamTransformer.js",
     "example:2": "node ./examples/RetryMechanism.js",
     "example:3": "node ./examples/AdaptiveRateLimiter.js",
-    "example:4": "node ./examples/DependencyInjectionContainer.js"
+    "example:4": "node ./examples/DependencyInjectionContainer.js",
+    "example:5": "node ./examples/PluginManager.js"
   },
   "repository": {
     "type": "git",

@@ -58,8 +58,13 @@
   npm run example:3
 ```
 
-- Dynamic Plugin System
+- **[Dynamic Plugin System](./examples/PluginManager.js)**
+![Dynamic Plugin System](./assets/img/plugin-system-diagram.svg)
     - Runtime plugin loading
     - Hot-reload capabilities
     - Safe plugin execution
     - Error-tolerant plugin management
+    - Full Article (Medium)
+```bash
+  npm run example:5
+```
