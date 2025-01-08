@@ -64,7 +64,7 @@
     - Hot-reload capabilities
     - Safe plugin execution
     - Error-tolerant plugin management
-    - Full Article (Medium)
+    - [Full Article (Medium)](https://v-checha.medium.com/node-js-advanced-patterns-plugin-manager-44adb72aa6bb)
 ```bash
   npm run example:5
 ```
